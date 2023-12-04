@@ -1,0 +1,1 @@
+![laravel10ArquitecturaHexagonal](hexagonal.jpg)
