@@ -1,1 +1,1 @@
-![laravel10ArquitecturaHexagonal](hexagonal.jpg)
+![laravel10ArquitecturaHexagonal](https://raw.githubusercontent.com/gsanchez1687/Laravel10Hexagonal/main/public/hexagonal.png)
