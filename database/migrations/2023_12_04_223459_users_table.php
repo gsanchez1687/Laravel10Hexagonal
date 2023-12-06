@@ -18,7 +18,7 @@ class UsersTable extends Migration
             $table->string('name',100);
             $table->string('lastname',100) -> nullable();
             $table->string('email',100) -> unique();
-            $table->timestamp('email_verified_at',100) -> nullable();
+            $table->timestamp('email_verified_at') -> nullable();
             $table->string('username',100) -> unique();
             $table->string('password',100);
             $table->rememberToken();

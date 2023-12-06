@@ -175,6 +175,8 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
+        //USER ROUTE SERVICE PROVIDER
+        Src\Entity\User\Infrastructure\Services\RouteServiceProvider::class,
     ],
 
     /*
