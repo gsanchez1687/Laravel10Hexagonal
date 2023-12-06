@@ -1,15 +1,18 @@
-<?php 
+<?php
 
 namespace Src\Entity\User\Application\Find;
 use Src\Entity\User\Domain\Exceptions\UserException;
+use Src\Entity\User\Infrastructure\Repositories\Eloquent\UserRepository;
+
 final class UserFindAllUseCase{
- 
-   
+
+    private $repository;
+
+    public function __construct(UserRepository $repository){
+        $this->repository = $repository;
+    }
 
     public function __invoke(): ?array {
-        throw new UserException('Error al buscar usuarios', 500);
-        return [
-            'message' => 'Hola mundo desde el caso de uso'
-        ];
+        return $this->repository->findAll();
     }
 }

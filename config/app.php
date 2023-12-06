@@ -177,6 +177,8 @@ return [
 
         //USER ROUTE SERVICE PROVIDER
         Src\Entity\User\Infrastructure\Services\RouteServiceProvider::class,
+        //USER DEPENDENCY SERVICE PROVIDER
+        Src\Entity\User\Infrastructure\Services\DependencyServiceProvider::class,
     ],
 
     /*
