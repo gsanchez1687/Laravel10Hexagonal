@@ -13,9 +13,13 @@ class DependencyServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->when('\Src\Entity\User\Application\Find\UserFindAllUseCase')
-            ->needs('\Src\Entity\User\Domain\Contracts\RepositoryContract')
-            ->give('\Src\Entity\User\Infrastructure\Repositories\Eloquent\UserRepository');
+        $this->app->when(\Src\Entity\User\Application\Find\UserFindAllUseCase::class)
+            ->needs(\Src\Entity\User\Domain\Contracts\RepositoryContract::class)
+            ->give(\Src\Entity\User\Infrastructure\Repositories\Eloquent\UserRepository::class);
+
+        $this->app->when(\Src\Entity\User\Application\Find\UserFindByIdUseCase::class)
+            ->needs(\Src\Entity\User\Domain\Contracts\RepositoryContract::class)
+            ->give(\Src\Entity\User\Infrastructure\Repositories\Eloquent\UserRepository::class);
     }
 
     /**

@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 namespace Src\Entity\User\Domain\ValueObject;
 
